@@ -7,38 +7,44 @@ body {
   justify-content: space-between;
   margin: 0;
   border-bottom: 1px solid black;
+  margin-bottom: 0;
 }
 
 .pop {
   display: inline-block;
-  font-size: 20px;
+  font-size: 30px;
   margin-left: 10px;
-  font-family: "Press Start 2P", cursive;
+  font-family: "DotGothic16", serif;
 }
 .art{
-  font-family: "Press Start 2P", cursive;
+  font-family: "DotGothic16", serif;
   color: rgb(217, 70, 183);
 }
 .info {
   display: flex;
   align-items: center;
+  font-size: 25px;
   gap: 15px;
   padding: 5px 10px;
   margin-right: 10px;
 }
 .info .t {
-  font-family: "Press Start 2P", cursive;
+  font-family: "DotGothic16", serif;
   border: 2px solid black;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
 }
+.info .t:active {
+  box-shadow: rgba(1, 1, 1, 0.35) 0px 5px 15px;
+  background-color: rgb(239, 235, 15);
+  color: black;
+}
 
 .heading {
   text-align: center;
-  font-size: 40px;
-  font-family: "Silkscreen", sans-serif;
-  font-weight: 0;
+  font-size: 55px;
+  font-family: "DotGothic16", serif;
   text-transform: none;
 }
 .img1 {
@@ -48,26 +54,27 @@ body {
 
 .container2 {
   margin-top: 90px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
   gap: 20px;
   overflow-x: auto;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
+
 .container2 img {
-  width: 470px;
+  width: 100%; 
 }
 .project {
   font-weight: 800;
 }
 
 .para {
-  margin-top: 100px;
-  font-size: 20px;
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: 60px;
+  font-size: 30px;
+  text-align: start;
+  margin-left: 50%;
+  margin-right: 0;
 }
 
 .container3 {
@@ -84,6 +91,9 @@ body {
   border-radius: 5px;
   font-size: 20px;
   cursor: pointer;
+}
+.btn-subscribe:active {
+  background-color: rgb(214, 15, 15);
 }
 .input-email {
   padding-top: 13px;
@@ -106,7 +116,7 @@ body {
   cursor: pointer;
 }
 .stay {
-  font-family: "Silkscreen", sans-serif;
+  font-family: "DotGothic16", serif;
 }
 
 footer {
@@ -125,9 +135,9 @@ footer {
 @media only screen and (max-width: 767px){
   .pop {
     display: inline-block;
-    font-size: 10px;
+    font-size: 15px;
     margin-left: 10px;
-    font-family: "Press Start 2P", cursive;
+    font-family: "DotGothic16", serif;
   }
   .info {
     display: flex;
@@ -135,12 +145,12 @@ footer {
     gap: 15px;
     padding: 5px 10px;
     margin-right: 10px;
-    font-size: 10px;
+    font-size: 15px;
   }
   .heading {
     text-align: center;
     font-size: 20px;
-    font-family: "Silkscreen", sans-serif;
+    font-family: "DotGothic16", serif;
     font-weight: 0;
   }  
   .img1 {
@@ -156,6 +166,7 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  
   .container2 img {
     width: 220px;
   }
@@ -165,15 +176,26 @@ footer {
   .para {
     margin-top: 60px;
     font-size: 20px;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    text-align: start;
+    margin-left: 30%;
+    margin-right: 0;
   }
   .container3 {
     margin-top: 80px;
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+  .para {
+    margin-top: 60px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 1%;
+    
+  }
+
+  .btn-subscribe {
+    margin-top: 10px;
   }
   
 }
@@ -195,7 +217,7 @@ footer {
   .heading {
     text-align: center;
     font-size: 15px;
-    font-family: "Silkscreen", sans-serif;
+    font-family: "DotGothic16", serif;
     font-weight: 0;
   }  
   .img1 {
@@ -221,8 +243,8 @@ footer {
     margin-top: 60px;
     font-size: 20px;
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    
+    margin-right: 0;
   }
   .container3 {
     margin-top: 80px;
@@ -234,3 +256,4 @@ footer {
     margin-top: 10px;
   }
 }
+
